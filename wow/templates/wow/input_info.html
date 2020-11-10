@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title>WoW</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+	body{
+        background-color:#ebebeb;
+        overflow:hidden;
+  }
+  * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+  #index {
+		position: absolute;
+		width: 285px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#_253 {
+		fill: rgba(247,236,235,1);
+	}
+	._253 {
+		position: absolute;
+		overflow: visible;
+		width: 285px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+	}
+	#index_n {
+		position: absolute;
+		width: 153px;
+		height: 201px;
+		left: 35px;
+		top: 56px;
+		overflow: visible;
+	}
+	#_1 {
+		position: absolute;
+		width: 132px;
+		height: 77px;
+		left: 21px;
+		top: 124px;
+		overflow: visible;
+	}
+	#Input_info__Edit_Report {
+		left: 35px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 98px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(101,101,101,1);
+	}
+	#_1_q {
+		fill: rgba(247,236,235,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._1_q {
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		height: 22px;
+		left: 0px;
+		top: 0px;
+	}
+	#_3 {
+		position: absolute;
+		width: 138px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#A1B4 {
+		left: 79px;
+		top: 18px;
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -2px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(148,148,148,1);
+		letter-spacing: 1px;
+	}
+	#_104 {
+		fill: rgba(235,235,235,1);
+	}
+	._104 {
+		overflow: visible;
+		position: absolute;
+		width: 64px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#report {
+		position: absolute;
+		width: 24.75px;
+		height: 31.5px;
+		left: 20px;
+		top: 15px;
+		overflow: visible;
+	}
+	#_105 {
+		fill: rgba(0,0,0,1);
+	}
+	._105 {
+		overflow: visible;
+		position: absolute;
+		width: 9px;
+		height: 2.25px;
+		left: 5.625px;
+		top: 18px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_106 {
+		fill: rgba(0,0,0,1);
+	}
+	._106 {
+		overflow: visible;
+		position: absolute;
+		width: 13.5px;
+		height: 2.25px;
+		left: 5.625px;
+		top: 12.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_107 {
+		fill: rgba(0,0,0,1);
+	}
+	._107 {
+		overflow: visible;
+		position: absolute;
+		width: 5.625px;
+		height: 2.25px;
+		left: 5.625px;
+		top: 23.625px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_108 {
+		fill: rgba(0,0,0,1);
+	}
+	._108 {
+		overflow: visible;
+		position: absolute;
+		width: 24.75px;
+		height: 31.5px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+  #contents {
+		position: absolute;
+		width: 521px;
+		height: 843px;
+		left: 40%;
+		top: 64px;
+		overflow: visible;
+	}
+	#_38 {
+		position: absolute;
+		width: 114px;
+		height: 53px;
+		left: 184px;
+		top: 650px;
+		overflow: visible;
+	}
+	#_256 {
+		fill: rgba(224,224,224,1);
+	}
+	._256 {
+		position: absolute;
+		overflow: visible;
+		width: 114px;
+		height: 53px;
+		left: 0px;
+		top: 0px;
+	}
+	#Creating {
+		left: 19px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#_36 {
+		position: absolute;
+		width: 521px;
+		height: 85px;
+		left: 0px;
+		top: 535px;
+		overflow: visible;
+	}
+	#_ {
+		left: 9px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(136,136,136,1);
+	}
+	#_35 {
+		position: absolute;
+		width: 521px;
+		height: 48px;
+		left: 0px;
+		top: 37px;
+		overflow: visible;
+	}
+	#_2 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._2 {
+		position: absolute;
+		overflow: visible;
+		width: 521px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#upload {
+		position: absolute;
+		width: 22.087px;
+		height: 17.458px;
+		left: 476.109px;
+		top: 15.545px;
+		overflow: visible;
+	}
+	#_109 {
+		fill: rgba(0,0,0,1);
+	}
+	._109 {
+		overflow: visible;
+		position: absolute;
+		width: 22.087px;
+		height: 17.458px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_110 {
+		fill: rgba(0,0,0,1);
+	}
+	._110 {
+		overflow: visible;
+		position: absolute;
+		width: 1.38px;
+		height: 12.424px;
+		left: 10.354px;
+		top: 0.893px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#wav____ {
+		left: 26px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 296px;
+		height: 24px;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#_40 {
+		position: absolute;
+		width: 247px;
+		height: 89px;
+		left: 274px;
+		top: 266px;
+		overflow: visible;
+	}
+	#_2_bc {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._2_bc {
+		position: absolute;
+		overflow: visible;
+		width: 247px;
+		height: 48px;
+		left: 0px;
+		top: 41px;
+	}
+	#____ {
+		left: 14px;
+		top: 54px;
+		position: absolute;
+		overflow: visible;
+		width: 221px;
+		height: 24px;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#___ {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 48px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(136,136,136,1);
+	}
+	#_37 {
+		position: absolute;
+		width: 521px;
+		height: 89px;
+		left: 0px;
+		top: 398px;
+		overflow: visible;
+	}
+	#_34 {
+		position: absolute;
+		width: 521px;
+		height: 48px;
+		left: 0px;
+		top: 41px;
+		overflow: visible;
+	}
+	#_2_bh {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._2_bh {
+		position: absolute;
+		overflow: visible;
+		width: 521px;
+		height: 48px;
+		left: 0px;
+		top: 0px;
+	}
+	#_bi {
+		left: 22px;
+		top: 12px;
+		position: absolute;
+		overflow: visible;
+		width: 221px;
+		height: 24px;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#__bj {
+		left: 9px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(136,136,136,1);
+	}
+	#_39 {
+		position: absolute;
+		width: 246px;
+		height: 89px;
+		left: 9px;
+		top: 266px;
+		overflow: visible;
+	}
+	#_2_bl {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._2_bl {
+		position: absolute;
+		overflow: visible;
+		width: 246px;
+		height: 48px;
+		left: 0px;
+		top: 41px;
+	}
+	#ID20201111 {
+		left: 26px;
+		top: 54px;
+		position: absolute;
+		overflow: visible;
+		width: 221px;
+		height: 24px;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#__bn {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(136,136,136,1);
+	}
+	#_33 {
+		position: absolute;
+		width: 521px;
+		height: 91px;
+		left: 0px;
+		top: 121px;
+		overflow: visible;
+	}
+	#_254 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._254 {
+		position: absolute;
+		overflow: visible;
+		width: 521px;
+		height: 48px;
+		left: 0px;
+		top: 43px;
+	}
+	#_____bq {
+		left: 31px;
+		top: 57px;
+		position: absolute;
+		overflow: visible;
+		width: 266px;
+		height: 24px;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#__br {
+		left: 6px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		line-height: 23px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(136,136,136,1);
+	}
+	#_____ {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 522px;
+		height: 160px;
+		line-height: 54px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: NanumSquare;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(136,136,136,1);
+	}
+  </style>
+</head>
+<body>
+  
+  <div id="index">
+
+
+	<svg xmlns="http://www.w3.org/2000/svg" width="285" height="1080" viewBox="0 0 285 1080">
+		<path fill="#f7eceb" d="M0 0H285V1080H0z"/>
+		<g>
+			<g>
+				<text fill="#656565" font-family="AppleSDGothicNeoUL00" font-size="21px" transform="translate(35 56) translate(21 124) translate(35 19)">
+					<tspan x="0" y="0">Input info</tspan><tspan x="0" y="52">Edit Report</tspan>
+				</text>
+				<g fill="#f7eceb" stroke="#707070" stroke-width="3px" transform="translate(35 56) translate(21 124)">
+					<circle cx="11" cy="11" r="11" stroke="none"/>
+					<circle cx="11" cy="11" r="9.5" fill="none"/>
+				</g>
+			</g>
+			<g>
+				<text fill="#949494" font-family="AppleSDGothicNeoSB00" font-size="24px" letter-spacing="0.1em" transform="translate(35 56) translate(79 40)">
+					<tspan x="0" y="0">A1B4</tspan>
+				</text>
+				<path fill="#ebebeb" d="M32 0A32 32 0 1 1 0 32 32 32 0 0 1 32 0z" transform="translate(35 56)"/>
+				<g>
+					<path d="M11.25 20.25h9v2.25h-9z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+					<path d="M11.25 14.625h13.5v2.25h-13.5z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+					<path d="M11.25 25.875h5.625v2.25H11.25z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+					<path d="M28.125 5.625H24.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-9a2.25 2.25 0 0 0-2.25 2.25v1.125H7.875a2.25 2.25 0 0 0-2.25 2.25V31.5a2.25 2.25 0 0 0 2.25 2.25h20.25a2.25 2.25 0 0 0 2.25-2.25V7.875a2.25 2.25 0 0 0-2.25-2.25zM13.5 4.5h9V9h-9zm14.625 27H7.875V7.875h3.375v3.375h13.5V7.875h3.375z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+				</g>
+			</g>
+		</g>
+	</svg>
+	
+	
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contents">
+    <form action="" enctype="multipart/form-data" method="POST">
+      {% csrf_token %}
+      <div id="_____">
+        <span>안녕하세요! <br/>회의 정보를 간단하게 입력해주세요</span>
+      </div>
+      <div id="_33">
+        <svg class="_254">
+          <rect id="_254" rx="21" ry="21" x="0" y="0" width="521" height="48">
+          </rect>
+        </svg>
+        <div id="_____bq">
+          <span><input type="text" name="title" placeholder="더 좋은 팀명에 관하여 회의함" style="width:450px" value="{{form.title.value}}"></span>          
+        </div>
+        <div id="__br">
+          <span>회의 안건</span>
+        </div>
+      </div>
+      <div id="_39">
+        <svg class="_2_bl">
+          <rect id="_2_bl" rx="21" ry="21" x="0" y="0" width="246" height="48">
+          </rect>
+        </svg>
+        <div id="ID20201111">
+          <span><input type="date" name="date" value="{{form.date.value}}"></span>
+        </div>
+        <div id="__bn">
+          <span>회의 날짜</span>
+        </div>
+      </div>
+      <div id="_40">
+        <svg class="_2_bc">
+          <rect id="_2_bc" rx="19" ry="19" x="0" y="0" width="247" height="48">
+          </rect>
+        </svg>
+        <div id="____">
+          <!-- <span>지니, 혜니, 재니, 광니, 태니</span> -->
+          <span><input type="text" name="members" placeholder="지니, 혜니, 재니, 광니, 태니" style="width:220px" value="{{form.members.value}}"></span>
+        </div>
+        <div id="___">
+          <span>참석자</span>
+        </div>
+      </div>
+      <div id="_37">
+        <div id="_34">
+          <svg class="_2_bh">
+            <rect id="_2_bh" rx="23" ry="23" x="0" y="0" width="521" height="48">
+            </rect>
+          </svg>
+          <div id="_bi">
+            <span><input type="text" name="tag" placeholder="주간회의" style="width:450px" value="{{form.tag.value }}"></span>
+            <!-- <select name="tag" title="tag" style="width:450px" >
+              <option value="1">주간회의</option>
+              <option value="2">월간회의</option>
+              <option value="{{tag}}">거래처미팅</option>
+            </select> -->
+          </div>
+        </div>
+        <div id="__bj">
+          <span>회의 태그</span>
+        </div>
+      </div>
+      <div id="_36">
+        <div id="_">
+          <span>파일 업로드</span>
+        </div>
+        <div id="_35">
+          <svg class="_2">
+            <rect id="_2" rx="24" ry="24" x="0" y="0" width="521" height="48">
+            </rect>
+          </svg>
+          <!-- <div id="upload">
+            <svg class="_109" viewBox="0 3.044 22.087 17.458">
+              <path id="_109" d="M 0.6902216672897339 12.22014904022217 C 1.071420550346375 12.22014904022217 1.380443334579468 12.52917098999023 1.380443334579468 12.91037082672119 L 1.380443334579468 17.74192047119141 C 1.380443334579468 18.50431823730469 1.998488903045654 19.12236404418945 2.760886669158936 19.12236404418945 L 19.32620620727539 19.12236404418945 C 20.08860397338867 19.12236404418945 20.70664978027344 18.50431823730469 20.70664978027344 17.74192047119141 L 20.70664978027344 12.91037082672119 C 20.70664978027344 12.52917098999023 21.01567268371582 12.22014904022217 21.39687156677246 12.22014904022217 C 21.77806854248047 12.22014904022217 22.08709335327148 12.52917098999023 22.08709335327148 12.91037082672119 L 22.08709335327148 17.74192047119141 C 22.08709335327148 19.26671600341797 20.85100364685059 20.5028076171875 19.32620620727539 20.5028076171875 L 2.760886669158936 20.5028076171875 C 1.236091017723083 20.5028076171875 0 19.26671600341797 0 17.74192047119141 L 0 12.91037082672119 C 0 12.52917098999023 0.309022843837738 12.22014904022217 0.6902217864990234 12.22014904022217 Z M 6.90221643447876 7.876967430114746 C 7.171764850616455 8.146518707275391 7.608794212341309 8.146518707275391 7.878342628479004 7.87696647644043 L 11.04354667663574 4.710536956787109 L 14.20874881744385 7.875740051269531 C 14.38149356842041 8.057403564453125 14.63915157318115 8.131126403808594 14.88184070587158 8.068328857421875 C 15.12452983856201 8.005531311035156 15.31409072875977 7.81608772277832 15.37704181671143 7.57343864440918 C 15.43999099731445 7.330788612365723 15.36643028259277 7.073084831237793 15.18487644195557 6.900227546691895 L 11.53191661834717 3.247267246246338 C 11.40242576599121 3.117447853088379 11.22659969329834 3.044488430023193 11.04323959350586 3.044488430023193 C 10.85987854003906 3.044488430023193 10.68405342102051 3.117447853088379 10.55456161499023 3.247267246246338 L 6.90221643447876 6.900227546691895 C 6.772397518157959 7.029718399047852 6.699437618255615 7.205543518066406 6.699437618255615 7.388904571533203 C 6.699437618255615 7.572264671325684 6.772397518157959 7.748089790344238 6.90221643447876 7.877581596374512 Z">
+              </path>
+            </svg>
+            <svg class="_110" viewBox="16.875 4.5 1.38 12.424">
+              <path id="_110" d="M 17.56522178649902 4.5 C 17.94642066955566 4.5 18.25544357299805 4.809022426605225 18.25544357299805 5.190221309661865 L 18.25544357299805 16.23376846313477 C 18.25544357299805 16.61496734619141 17.94642066955566 16.92399024963379 17.56522178649902 16.92399024963379 C 17.18402099609375 16.92399024963379 16.875 16.61496734619141 16.875 16.23376846313477 L 16.875 5.190221309661865 C 16.875 4.809022426605225 17.18402099609375 4.5 17.56522178649902 4.5 Z">
+              </path>
+            </svg>
+          </div> -->
+          <div id="wav____">
+            <!-- <span>.wav 확장자 파일을 업로드 해주세요</span> -->
+            <span><input type="file" name="wav" accept="audio/wav" value="{{form.wav.value}}"></span>
+          </div>
+        </div>
+      </div>
+      <div id="_38">
+        <svg class="_256">
+          <rect id="_256" rx="17" ry="17" x="0" y="0" width="114" height="53">
+          </rect>
+        </svg>
+        <div id="Creating">
+          <span><input type="submit" value="Creating" style="background-color:transparent" formaction="{% url 'wow:creating' %}"></span>
+        </div>
+      </div>
+    </form>
+	</div>
+
+
+    
+</body>
+</html>

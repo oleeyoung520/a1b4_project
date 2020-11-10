@@ -1,0 +1,947 @@
+
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WoW</title>
+<link rel="stylesheet" type="text/css" href="{% static 'wow/style.css' %}">
+<link rel="stylesheet" type="text/javascript" href="{% static 'wow/scripts.js' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<style id="applicationStylesheet" type="text/css">
+	body{
+        background-color:#ebebeb;
+        overflow:auto;
+  }
+	:root {
+		--web-view-ids: _1920__3;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#_1920__3 {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: 웹 1920 – 3;
+		--web-view-id: _1920__3;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_15_m {
+		fill: url(#_15_m);
+	}
+	._15_m {
+		position: absolute;
+		overflow: visible;
+		width:  1635px;
+		height: 1080px;
+		left: 285px;
+		top: 0px;
+	}
+	#index {
+		position: absolute;
+		width: 285px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#_253 {
+		fill: rgba(247,236,235,1);
+	}
+	._253 {
+		position: absolute;
+		overflow: visible;
+		width: 285px;
+		height: 1080px;
+		left: 0px;
+		top: 0px;
+	}
+	#_4 {
+		position: absolute;
+		width: 153px;
+		height: 201px;
+		left: 35px;
+		top: 56px;
+		overflow: visible;
+	}
+	#_1 {
+		position: absolute;
+		width: 132px;
+		height: 77px;
+		left: 21px;
+		top: 124px;
+		overflow: visible;
+	}
+	#Input_info__Edit_Report {
+		left: 35px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 98px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -2.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(101,101,101,1);
+	}
+	#_1_s {
+		fill: rgba(247,236,235,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._1_s {
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		height: 22px;
+		left: 0px;
+		top: 52px;
+	}
+	#_3 {
+		position: absolute;
+		width: 138px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#A1B4 {
+		left: 79px;
+		top: 18px;
+		position: absolute;
+		overflow: visible;
+		width: 60px;
+		white-space: nowrap;
+		line-height: 28px;
+		margin-top: -2px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		color: rgba(148,148,148,1);
+		letter-spacing: 1px;
+	}
+	#_104 {
+		fill: rgba(235,235,235,1);
+	}
+	._104 {
+		overflow: visible;
+		position: absolute;
+		width: 64px;
+		height: 64px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#report {
+		position: absolute;
+		width: 24.75px;
+		height: 31.5px;
+		left: 20px;
+		top: 15px;
+		overflow: visible;
+	}
+	#_105 {
+		fill: rgba(0,0,0,1);
+	}
+	._105 {
+		overflow: visible;
+		position: absolute;
+		width: 9px;
+		height: 2.25px;
+		left: 5.625px;
+		top: 18px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_106 {
+		fill: rgba(0,0,0,1);
+	}
+	._106 {
+		overflow: visible;
+		position: absolute;
+		width: 13.5px;
+		height: 2.25px;
+		left: 5.625px;
+		top: 12.375px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_107 {
+		fill: rgba(0,0,0,1);
+	}
+	._107 {
+		overflow: visible;
+		position: absolute;
+		width: 5.625px;
+		height: 2.25px;
+		left: 5.625px;
+		top: 23.625px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_108 {
+		fill: rgba(0,0,0,1);
+	}
+	._108 {
+		overflow: visible;
+		position: absolute;
+		width: 24.75px;
+		height: 31.5px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_47 {
+		position: absolute;
+		width: 1367px;
+		height: 601px;
+		left: 395px;
+		top: 145px;
+		overflow: visible;
+	}
+	#_46 {
+		position: absolute;
+		width: 584px;
+		height: 504px;
+		left: 783px;
+		top: 0px;
+		overflow: visible;
+	}
+	#_ {
+		left: 175px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 175px;
+		white-space: nowrap;
+		line-height: 57px;
+		margin-top: -9.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoT00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		color: rgba(136,136,136,1);
+	}
+	#_262 {
+		fill: rgba(224,224,224,1);
+	}
+	._262 {
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		height: 44px;
+		left: 488px;
+		top: 166px;
+	}
+	#Select {
+		left: 513px;
+		top: 180px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(170,170,170,1);
+	}
+	#_261 {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._261 {
+		position: absolute;
+		overflow: visible;
+		width: 464px;
+		height: 156px;
+		left: 0px;
+		top: 348px;
+	}
+	#lexrank_ {
+		left: 20px;
+		right: 20px;
+		top: 130px;
+		position: absolute;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#Ver_1_lexrank {
+		left: 0px;
+		top: 87px;
+		position: absolute;
+		overflow: visible;
+		width: 98px;
+		white-space: nowrap;
+		line-height: 25px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(136,136,136,1);
+	}
+	#_261 {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._261 {
+		position: absolute;
+		overflow: visible;
+		width: 464px;
+		height: 156px;
+		left: 0px;
+		top: 348px;
+	}
+	#Bert_ {
+		left: 20px;
+		right: 20px;
+		top: 365px;
+		position: absolute;
+		overflow: visible;
+		width: 79px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+	}
+	#Ver_2_Bert {
+		left: 0px;
+		top: 323px;
+		position: absolute;
+		overflow: visible;
+		width: 80px;
+		white-space: nowrap;
+		line-height: 25px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(136,136,136,1);
+	}
+	#_262_bc {
+		fill: rgba(224,224,224,1);
+	}
+	._262_bc {
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		height: 44px;
+		left: 488px;
+		top: 403px;
+	}
+	#Select_bd {
+		left: 510px;
+		top: 418px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		line-height: 26px;
+		margin-top: -4.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(170,170,170,1);
+	}
+	#_45 {
+		position: absolute;
+		width: 529px;
+		height: 601px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#__ {
+		left: 149px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 218px;
+		white-space: nowrap;
+		line-height: 57px;
+		margin-top: -9.5px;
+		text-align: left;
+		font-family: NanumSquare;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		color: rgba(136,136,136,1);
+	}
+	#_258_bh {
+		fill: url(#_258_bh);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._258_bh {
+		position: absolute;
+		overflow: visible;
+		width: 529px;
+		height: 401px;
+		left: 0px;
+		top: 112px;
+	}
+	#_123_bj {
+		fill: url(#_123_bj);
+	}
+	._123_bj {
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		left: 291px;
+		top: 567px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	# {
+		left: 215px;
+		top: 566px;
+		position: absolute;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -6.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(170,170,170,1);
+	}
+	#Raw_Data_ {
+		left: 20px;
+		right: 20px;
+		top: 132px;
+		position: absolute;
+		overflow: visible;
+		width: 460px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(49,49,49,1);
+	}
+	#_136 {
+		fill: transparent;
+		stroke: rgba(143,143,143,1);
+		stroke-width: 5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._136 {
+		overflow: visible;
+		position: absolute;
+		width: 5px;
+		height: 62.153px;
+		left: 505.654px;
+		top: 166.246px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_262_bn {
+		fill: rgba(224,224,224,1);
+	}
+	._262_bn {
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		height: 44px;
+		left: 300px;
+		top: 557px;
+	}
+	#Summary {
+		left: 309px;
+		top: 570px;
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(170,170,170,1);
+	}
+	#_48 {
+		position: absolute;
+		width: 10px;
+		height: 44px;
+		left: 152px;
+		top: 566px;
+		overflow: visible;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#_49 {
+		position: absolute;
+		width: 10px;
+		height: 44px;
+		left: 152px;
+		top: 606px;
+		overflow: visible;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+		display: none;
+	}
+	.u {
+		text-decoration: underline;
+		text-align=center;
+	}
+	#_267 {
+		fill: rgba(224,224,224,1);
+	}
+	._267 {
+		position: absolute;
+		overflow: visible;
+		width: 44px;
+		height: 44px;
+		left: 152px;
+		top: 557px;
+	}
+
+	#radio {
+		left: 200px;
+		top: 570px;
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(170,170,170,1);
+	}
+
+	.box-radio-input input[type="radio"]{
+		display:none;
+	}
+	
+	.box-radio-input input[type="radio"] + span{
+		display:inline-block;
+		background:none;
+		border: none;    
+		padding:0px 10px;
+		text-align:center;
+		height:35px;
+		line-height:33px;
+		font-weight:500;
+		cursor:pointer;
+	}
+	
+	.box-radio-input input[type="radio"]:checked + span{
+		border:none;
+		background:none;
+		text-underline-position: under;
+		font-family: AppleSDGothicNeoUL00;
+		color:rgb(253, 154, 154);
+	}
+	 
+	#_260 {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._260 {
+		position: absolute;
+		overflow: visible;
+		width: 463px;
+		height: 159px;
+		left: 0px;
+		top: 112px;
+	}
+
+
+	#_268 {
+		fill: rgba(224,224,224,1);
+	}
+
+	#edit {
+		fill: rgba(138,138,138,1);
+	}
+	.edit {
+		overflow: visible;
+		position: absolute;
+		width: 14.237px;
+		height: 17.796px;
+		left: 500px;
+		top: 81px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+	.raw_data {
+		overflow: auto;
+        width: 490px;
+		height: 380px;
+		resize:none;
+	  }
+
+	  .lex_data {
+		overflow: auto;
+        width: 425px;
+		height: 140px;
+		resize:none;
+	  }
+
+	  .bert_data {
+		overflow: auto;
+        width: 425px;
+		height: 140px;
+		resize:none;
+	  }
+
+	#exclamation-circle-line {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		left: 899px;
+		top: 235px;
+		overflow: visible;
+	}
+	#_124 {
+		fill: rgba(138,138,138,1);
+	}
+	._124 {
+		overflow: visible;
+		position: absolute;
+		width: 15px;
+		height: 16px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_125 {
+		fill: rgba(138,138,138,1);
+	}
+	._125 {
+		overflow: visible;
+		position: absolute;
+		width: 1.826px;
+		height: 6.041px;
+		left: 7.087px;
+		top: 3.537px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_126 {
+		fill: rgba(138,138,138,1);
+	}
+	._126 {
+		overflow: visible;
+		position: absolute;
+		width: 2px;
+		height: 2px;
+		left: 6.914px;
+		top: 10.267px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#______ {
+		left: 540px;
+		top: 239px;
+		position: absolute;
+		overflow: visible;
+		width: 210px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -12.5px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		color: rgba(138,138,138,1);
+	}
+	  
+</style>
+<script id="applicationScript">
+	function setOption(){
+    if($('input:radio[id=method1]').is(':checked')){
+		$('#_49').hide();
+		$('#_48').show();
+    }else{
+		$('#_48').hide();
+        $('#_49').show();
+    }
+}
+
+
+///////////////////////////////////////
+// INITIALIZATION
+///////////////////////////////////////
+
+/**
+ * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
+ * Code subject to change.
+ **/
+</script>
+</head>
+<body>
+<div id="_1920__3">
+	<svg class="_15_m">
+		<linearGradient id="_15_m" spreadMethod="pad" x1="1.254" x2="0.5" y1="0.059" y2="1">
+			<stop offset="0" stop-color="#eee" stop-opacity="1"></stop>
+			<stop offset="0" stop-color="#eee" stop-opacity="1"></stop>
+			<stop offset="0.1539" stop-color="#eaeaea" stop-opacity="1"></stop>
+			<stop offset="0.3882" stop-color="#eee" stop-opacity="1"></stop>
+			<stop offset="1" stop-color="#f0ecec" stop-opacity="1"></stop>
+		</linearGradient>
+		<rect id="_15_m" rx="0" ry="0" x="0" y="0" width="1635" height="1080">
+		</rect>
+	</svg>
+
+	<svg xmlns="http://www.w3.org/2000/svg" width="285" height="1080" viewBox="0 0 285 1080">
+		<path fill="#f7eceb" d="M0 0H285V1080H0z"/>
+		<g>
+			<g>
+				<text fill="#656565" font-family="AppleSDGothicNeoUL00" font-size="21px" transform="translate(35 56) translate(21 124) translate(35 19)">
+					<tspan x="0" y="0">Input info</tspan><tspan x="0" y="52">Edit Report</tspan>
+				</text>
+				<g fill="#f7eceb" stroke="#707070" stroke-width="3px" transform="translate(35 56) translate(21 124) translate(0 52)">
+					<circle cx="11" cy="11" r="11" stroke="none"/>
+					<circle cx="11" cy="11" r="9.5" fill="none"/>
+				</g>
+			</g>
+			<g>
+				<text fill="#949494" font-family="AppleSDGothicNeoSB00" font-size="24px" letter-spacing="0.1em" transform="translate(35 56) translate(79 40)">
+					<tspan x="0" y="0">A1B4</tspan>
+				</text>
+				<path fill="#ebebeb" d="M32 0A32 32 0 1 1 0 32 32 32 0 0 1 32 0z" transform="translate(35 56)"/>
+				<g>
+					<path d="M11.25 20.25h9v2.25h-9z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+					<path d="M11.25 14.625h13.5v2.25h-13.5z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+					<path d="M11.25 25.875h5.625v2.25H11.25z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+					<path d="M28.125 5.625H24.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-9a2.25 2.25 0 0 0-2.25 2.25v1.125H7.875a2.25 2.25 0 0 0-2.25 2.25V31.5a2.25 2.25 0 0 0 2.25 2.25h20.25a2.25 2.25 0 0 0 2.25-2.25V7.875a2.25 2.25 0 0 0-2.25-2.25zM13.5 4.5h9V9h-9zm14.625 27H7.875V7.875h3.375v3.375h13.5V7.875h3.375z" transform="translate(35 56) translate(20 15) translate(-5.625 -2.25)"/>
+				</g>
+			</g>
+		</g>
+	</svg>
+	
+	</div>
+	<div id="_47">
+		<div id="_46">
+			<form action="" method="post">
+				{% csrf_token %}
+				<input type="hidden" name="title" value="{{ title }}">
+				<input type="hidden" name="date" value="{{ date }}">
+				<input type="hidden" name="members" value="{{ members }}">
+				<input type="hidden" name="tag" value="{{ tag }}">
+				<input type="hidden" name="stt_result" value="{{ stt_result }}">
+			<div id="_">
+				<span>요약 회의록</span>
+			</div>
+			<svg class="_262">
+				<rect id="_262" rx="17" ry="17" x="0" y="0" width="96" height="44">
+				</rect>
+			</svg>
+			<svg class="_260">
+				<rect id="_260" rx="23" ry="23" x="0" y="0" width="464" height="156">
+				</rect>
+			</svg>
+			<div id="lexrank_">
+				<textarea readonly class='lex_data' name="res_lexrankr" placeholder="실제 문장을 살려 요약해요." style="border: none; ;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent">{{ res_lexrankr }}</textarea>
+			</div>
+			<div id="Select">
+				<span><input type="submit" name="var" value="Select" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent" formaction="{% url 'wow:report' %}"></span>
+			</div>
+			<div id="Ver_1_lexrank">
+				<span>Ver 1.</span>
+			</div>
+			<!-- </form> -->
+
+
+
+
+
+			<svg class="_261">
+				<rect id="_261" rx="23" ry="23" x="0" y="0" width="464" height="156">
+				</rect>
+			</svg>
+			<div id="Bert_">
+				<!-- <form> -->
+					<textarea readonly class='bert_data' name='res_bertsum' placeholder="문장을 매끄럽게 요약합니다." style="border: none; ;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent">{{ res_bertsum }}</textarea>
+				<!-- </form> -->
+			</div>
+			<div id="Ver_2_Bert">
+				<span>Ver 2.</span>
+			</div>
+			<svg class="_262_bc">
+				<rect id="_262_bc" rx="17" ry="17" x="0" y="0" width="96" height="44">
+				</rect>
+			</svg>
+			<div id="Select_bd">
+				<span><input type="submit" name="var" value="Choice" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent" formaction="{% url 'wow:report' %}"></span>
+			</div>
+			</form>
+
+
+
+
+		</div>
+		<div id="_45">
+			<form action="" method="post">
+				{% csrf_token %}
+				<input type="hidden" name="title" value="{{ title }}">
+				<input type="hidden" name="date" value="{{ date }}">
+				<input type="hidden" name="members" value="{{ members }}">
+        		<input type="hidden" name="tag" value="{{ tag }}">
+				<div id="__">
+					<span>요약 전 회의록</span>
+				</div>
+				<svg class="_258_bh">
+					<linearGradient id="_258_bh" spreadMethod="pad" x1="1.254" x2="0.5" y1="0.059" y2="1">
+						<stop offset="0" stop-color="#eee" stop-opacity="1"></stop>
+						<stop offset="0" stop-color="#eee" stop-opacity="1"></stop>
+						<stop offset="0.1539" stop-color="#eaeaea" stop-opacity="1"></stop>
+						<stop offset="0.3882" stop-color="#eee" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#f0ecec" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="_258_bh" rx="23" ry="23" x="0" y="0" width="529" height="401">
+					</rect>
+				</svg>
+				<svg class="_123_bj" viewBox="0 17 1 1">
+					<linearGradient id="_123_bj" spreadMethod="pad" x1="1.254" x2="0.5" y1="0.059" y2="1">
+						<stop offset="0" stop-color="#eee" stop-opacity="1"></stop>
+						<stop offset="0" stop-color="#eee" stop-opacity="1"></stop>
+						<stop offset="0.1539" stop-color="#eaeaea" stop-opacity="1"></stop>
+						<stop offset="0.3882" stop-color="#eee" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#f0ecec" stop-opacity="1"></stop>
+					</linearGradient>
+					<path id="_123_bj" d="M 0 17 L 0 17 Z">
+					</path>
+				</svg>
+				<div id="Raw_Data_">
+					
+					<textarea class='raw_data' name="stt_result" placeholder="STT 결과가 나타납니다. 수정을 원하시면 클릭 후 작성해주세요." style="border: none; ;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent">{{ stt_result }}</textarea>
+					
+					<!-- 		
+					<span><input type="text" value="Raw Data" style="background-color:transparent" formaction="{% url 'wow:creating' %}"></span>
+					<span>Raw Data<br/>편집창</span> -->
+				</div>
+				<div id="radio">
+				<label class="box-radio-input" style="font-size: 21px; font-family: AppleSDGothicNeoUL00; transform: translate(0 19)">
+					<input type="radio" id="method1" name="method" value="옵션1" checked="checked" onchange="setOption()"><span>문장으로</span></label>
+					<br>
+				<label class="box-radio-input" style="font-size: 21px; font-family: AppleSDGothicNeoUL00; transform: translate(0 19)">
+					<input type="radio" id="method2" name="method" value="옵션2" onchange="setOption()"><span>퍼센트로</span></label>
+				</div>
+				<svg class="_262_bn">
+					<rect id="_262_bn" rx="17" ry="17" x="0" y="0" width="96" height="44">
+					</rect>
+				</svg>
+				<div id="Summary">
+					<span><input type="submit" value="Summary" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent" formaction="{% url 'wow:sum' %}"></span>
+				</div>
+				<div id="_48">
+						<span><input class = "u" type="number" name="num1" value="{{ num1 | default:3 }}" min="1" max="10" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent" formaction="{% url 'wow:creating' %}"></span>
+				</div>
+				<div id="_49">
+					<span><input class = "u" type="number" name="num2" value="{{ num2 | default:10 }}" min="10" max="90" step="10" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent" formaction="{% url 'wow:creating' %}"></span>
+				</div>
+				
+				<!-- <svg class="_268">
+					<text fill="#aaa" font-family="AppleSDGothicNeoUL00" font-size="21px" transform="translate(0 19)">
+						<tspan x="0" y="0">줄로</tspan>
+					</text>
+				</svg> -->
+			</form>
+		</div>
+	</div>
+	<div id="exclamation-circle-line">
+		<svg class="_124" viewBox="6 6 16.858 16.858">
+			<path id="_124" d="M 14.428955078125 6 C 9.773771286010742 6 6 9.773771286010742 6 14.428955078125 C 6 19.08413887023926 9.773771286010742 22.85791015625 14.428955078125 22.85791015625 C 19.08413887023926 22.85791015625 22.85791015625 19.08413696289063 22.85791015625 14.428955078125 C 22.85791015625 9.773771286010742 19.08413696289063 6 14.428955078125 6 Z M 14.428955078125 21.45308303833008 C 10.54963493347168 21.45308303833008 7.404825210571289 18.30827331542969 7.404825687408447 14.42895317077637 C 7.404825687408447 10.54963493347168 10.549635887146 7.404825210571289 14.42895603179932 7.404825687408447 C 18.30827522277832 7.404825687408447 21.45308303833008 10.549635887146 21.45308303833008 14.42895603179932 C 21.45308303833008 18.30827331542969 18.30827522277832 21.45308303833008 14.42895603179932 21.45308303833008 Z">
+			</path>
+		</svg>
+		<svg class="_125" viewBox="16.7 11.47 1.826 6.041">
+			<path id="_125" d="M 17.61313629150391 17.51074981689453 C 17.10882568359375 17.51074981689453 16.70000076293945 17.10192489624023 16.70000076293945 16.59761428833008 L 16.70000076293945 12.38313674926758 C 16.70000076293945 11.87882614135742 17.10882568359375 11.46999931335449 17.61313819885254 11.46999931335449 C 18.11745071411133 11.46999931335449 18.52627563476563 11.87882614135742 18.52627563476563 12.38313674926758 L 18.52627563476563 16.59761428833008 C 18.52627563476563 17.10192489624023 18.11745071411133 17.51074981689453 17.61314010620117 17.51074981689453 Z">
+			</path>
+		</svg>
+		<svg class="_126" viewBox="16.45 21.52 2.107 2.107">
+			<path id="_126" d="M 18.5572395324707 22.5736198425293 C 18.5572395324707 23.15552139282227 18.08551788330078 23.62724304199219 17.50361824035645 23.62723922729492 C 16.92172241210938 23.62723922729492 16.45000076293945 23.155517578125 16.45000076293945 22.5736198425293 C 16.45000076293945 21.99172401428223 16.92172241210938 21.5200023651123 17.50362014770508 21.5200023651123 C 18.08551788330078 21.5200023651123 18.5572395324707 21.99172210693359 18.5572395324707 22.5736198425293 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="______">
+		<span>문장이 끝나는 곳에 온점이 정확히 찍혀졌는지 확인해주세요</span>
+	</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

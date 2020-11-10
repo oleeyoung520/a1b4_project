@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WoW</title>
+<link rel="stylesheet" type="text/css" href="{% static 'wow/style.css' %}">
+<link rel="stylesheet" type="text/javascript" href="{% static 'wow/scripts.js' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<style id="applicationStylesheet" type="text/css">
+	a:link { color: black; text-decoration: none;}
+	a:visited { color: black; text-decoration: none;}
+	a:hover { color: black; text-decoration: underline;}
+
+    body{
+		transform: scale(1.1);
+		transform-origin: 0 0;
+        background-color:#545871;
+		overflow:auto;;
+	}
+	.mediaViewInfo {
+		--web-view-name: 웹 1920 – 4;
+		--web-view-id: _1920__4;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: _1920__4;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#_1920__4 {
+		position: absolute;
+		width: 1920px;
+		height: 3159px;
+		background-color: rgba(84,88,113,1);
+		overflow: hidden;
+		--web-view-name: 웹 1920 – 4;
+		--web-view-id: _1920__4;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_62 {
+		position: absolute;
+		width: 1920px;
+		height: 2956px;
+		left: 0px;
+		top: 203px;
+		overflow: visible;
+	}
+	#_61 {
+		position: absolute;
+		width: 1920px;
+		height: 504px;
+		left: 0px;
+		top: 2452px;
+		overflow: visible;
+	}
+	#bg {
+		fill: rgba(247,236,235,1);
+	}
+	.bg {
+		overflow: visible;
+		position: absolute;
+		width: 1920px;
+		height: 504px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+	.summary_data {
+		overflow: auto;
+        width: 730px;
+		height: 158px;
+		resize:none;
+	  }
+
+	  .raw_data {
+		overflow: auto;
+        width: 730px;
+		height: 745px;
+		resize:none;
+	  }
+
+
+	#Contact {
+		opacity: 0.3;
+		left: 873px;
+		top: 149px;
+		position: absolute;
+		overflow: visible;
+		width: 151px;
+		white-space: nowrap;
+		line-height: 56px;
+		margin-top: -4px;
+		text-align: center;
+		font-family: NanumSquare;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(84,88,113,1);
+	}
+	#A1B4s_github {
+		left: 846px;
+		top: 252px;
+		position: absolute;
+		overflow: visible;
+		width: 261px;
+		white-space: nowrap;
+		line-height: 56px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: NanumSquare;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 48px;
+		color: rgba(84,88,113,1);
+		text-decoration: underline;
+	}
+	#github {
+		fill: rgba(0,0,0,1);
+	}
+	.github {
+		overflow: visible;
+		position: absolute;
+		width: 36px;
+		height: 35.121px;
+		left: 791px;
+		top: 265px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_60 {
+		position: absolute;
+		width: 1046px;
+		height: 2067px;
+		left: 437px;
+		top: 0px;
+		overflow: visible;
+	}
+	#WoW {
+		left: 446px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		white-space: nowrap;
+		line-height: 72px;
+		margin-top: -5px;
+		text-align: center;
+		font-family: AppleSDGothicNeoH00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 62px;
+		color: rgba(255,255,255,1);
+	}
+	#_263 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._263 {
+		position: absolute;
+		overflow: visible;
+		width: 1046px;
+		height: 1918px;
+		left: 0px;
+		top: 149px;
+	}
+	#_59 {
+		position: absolute;
+		width: 796px;
+		height: 1773.528px;
+		left: 125px;
+		top: 216.973px;
+		overflow: visible;
+	}
+	#_57 {
+		position: absolute;
+		width: 784.813px;
+		height: 87px;
+		left: 0.036px;
+		top: 0px;
+		overflow: visible;
+	}
+	#__ {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(84,88,113,1);
+	}
+	#_113 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._113 {
+		overflow: visible;
+		position: absolute;
+		width: 320.174px;
+		height: 1px;
+		left: 140.747px;
+		top: 32.053px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#____ {
+		left: 148.642px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 307.666px;
+		height: 31.58795928955078px;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#___z {
+		left: 509.148px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(84,88,113,1);
+	}
+	#_133 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._133 {
+		overflow: visible;
+		position: absolute;
+		width: 135.565px;
+		height: 1px;
+		left: 649.248px;
+		top: 32.053px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ID20201111 {
+		left: 657.803px;
+		top: 3px;
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		white-space: nowrap;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+    }
+    
+
+	#ID주간회의 {
+		left: 657px;
+		top: 59px;
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		white-space: nowrap;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+    }
+    
+
+	#___ {
+		left: 509.148px;
+		top: 54.754px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(84,88,113,1);
+	}
+	#_135 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._135 {
+		overflow: visible;
+		position: absolute;
+		width: 135.565px;
+		height: 1px;
+		left: 649.248px;
+		top: 87px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#___ba {
+		left: 0px;
+		top: 54.754px;
+		position: absolute;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(84,88,113,1);
+	}
+	#_114 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._114 {
+		overflow: visible;
+		position: absolute;
+		width: 319.313px;
+		height: 1.155px;
+		left: 140.747px;
+		top: 86.845px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_____ {
+		left: 148.645px;
+		top: 60px;
+		position: absolute;
+		overflow: visible;
+		width: 290.556px;
+		height: 31.58795928955078px;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	# {
+		left: 657.803px;
+		top: 55px;
+		position: absolute;
+		overflow: visible;
+		width: 70px;
+		white-space: nowrap;
+		line-height: 32px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(170,170,170,1);
+	}
+	#_55 {
+		position: absolute;
+		width: 796px;
+		height: 251.861px;
+		left: 0px;
+		top: 161.027px;
+		overflow: visible;
+	}
+	#___bb {
+		left: 310px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 172px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(84,88,113,1);
+	}
+	#_264 {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._264 {
+		position: absolute;
+		overflow: visible;
+		width: 796px;
+		height: 202.861px;
+		left: 0px;
+		top: 49px;
+	}
+	#_lexrank__Bert_ {
+		left: 33px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 741px;
+		height: 144px;
+		line-height: 41px;
+		margin-top: -11px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 19px;
+		color: rgba(0,0,0,1);
+	}
+
+
+		#lexrank_ {
+		left: 20px;
+		right: 20px;
+		top: 130px;
+		position: absolute;
+		overflow: visible;
+		width: 730px;
+		white-space: nowrap;
+		line-height: 34px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(0,0,0,1);
+		}
+	
+	#_58 {
+		position: absolute;
+		width: 796px;
+		height: 841.895px;
+		left: 0px;
+		top: 833.132px;
+		overflow: visible;
+	}
+	#_ {
+		left: 344.871px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 98px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(84,88,113,1);
+	}
+	#_265 {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._265 {
+		position: absolute;
+		overflow: visible;
+		width: 796px;
+		height: 799px;
+		left: 0px;
+		top: 42.895px;
+	}
+	#_117 {
+		fill: rgba(247,236,235,1);
+	}
+	._117 {
+		overflow: visible;
+		position: absolute;
+		width: 29px;
+		height: 25px;
+		transform: translate(-562px, -1253.105px) matrix(1,0,0,1,1017.7642,1254.4285) rotate(180deg);
+		transform-origin: center;
+		left: 10px;
+		top: 0px;
+	}
+	#Raw_Data {
+		left: 33px;
+		top: 77.394px;
+		position: absolute;
+		overflow: visible;
+		width: 737px;
+		height: 741px;
+		line-height: 41px;
+		margin-top: -11px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 19px;
+		color: rgba(0,0,0,1);
+	}
+	#_121 {
+		fill: rgba(71,71,71,1);
+	}
+	._121 {
+		overflow: visible;
+		position: absolute;
+		width: 24.751px;
+		height: 22.501px;
+		left: 386px;
+		top: 1751.027px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_56 {
+		position: absolute;
+		width: 673.502px;
+		height: 262px;
+		left: 59px;
+		top: 479.027px;
+		overflow: visible;
+	}
+	#__bj {
+		left: 251px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 165px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoSB00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 26px;
+		color: rgba(84,88,113,1);
+	}
+	#_54 {
+		position: absolute;
+		width: 673.502px;
+		height: 59px;
+		left: 0px;
+		top: 47px;
+		overflow: visible;
+	}
+	#ID20201225 {
+		left: -30px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(94,94,94,1);
+	}
+	#_266 {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._266 {
+		position: absolute;
+		overflow: visible;
+		width: 406px;
+		height: 59px;
+		left: 164px;
+		top: 0px;
+	}
+	#____bn {
+		left: 223px;
+		top: 17px;
+		position: absolute;
+		overflow: visible;
+		width: 271px;
+		white-space: nowrap;
+		line-height: 41px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(170,170,170,1);
+	}
+	#_49 {
+		position: absolute;
+		width: 31.502px;
+		height: 29.251px;
+		left: 642px;
+		top: 13px;
+		overflow: visible;
+	}
+	#_131 {
+		fill: rgba(95,95,95,1);
+	}
+	._131 {
+		overflow: visible;
+		position: absolute;
+		width: 24.753px;
+		height: 18.005px;
+		left: 6.749px;
+		top: 2.25px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_132 {
+		fill: rgba(95,95,95,1);
+	}
+	._132 {
+		overflow: visible;
+		position: absolute;
+		width: 29.25px;
+		height: 29.251px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_53 {
+		position: absolute;
+		width: 673.502px;
+		height: 59px;
+		left: 0px;
+		top: 125px;
+		overflow: visible;
+	}
+	#ID20201224 {
+		left: -30px;
+		top: 14px;
+		position: absolute;
+		overflow: visible;
+		width: 123px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(94,94,94,1);
+	}
+	#_266_bt {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._266_bt {
+		position: absolute;
+		overflow: visible;
+		width: 406px;
+		height: 59px;
+		left: 164px;
+		top: 0px;
+	}
+	#___bu {
+		left: 223.963px;
+		top: 17.369px;
+		position: absolute;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		line-height: 41px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(170,170,170,1);
+	}
+	#_50 {
+		position: absolute;
+		width: 31.502px;
+		height: 29.251px;
+		left: 642px;
+		top: 11px;
+		overflow: visible;
+	}
+	#_131_bw {
+		fill: rgba(95,95,95,1);
+	}
+	._131_bw {
+		overflow: visible;
+		position: absolute;
+		width: 24.753px;
+		height: 18.005px;
+		left: 6.749px;
+		top: 2.25px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_132_bx {
+		fill: rgba(95,95,95,1);
+	}
+	._132_bx {
+		overflow: visible;
+		position: absolute;
+		width: 29.25px;
+		height: 29.251px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_52 {
+		position: absolute;
+		width: 673.502px;
+		height: 60px;
+		left: 0px;
+		top: 202px;
+		overflow: visible;
+	}
+	#ID20201111_bz {
+		left: -30px;
+		top: 15px;
+		position: absolute;
+		overflow: visible;
+		width: 109px;
+		white-space: nowrap;
+		line-height: 42px;
+		margin-top: -8px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(94,94,94,1);
+	}
+	#_266_b {
+		fill: rgba(238,238,238,1);
+		stroke: rgba(221,221,221,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._266_b {
+		position: absolute;
+		overflow: visible;
+		width: 406px;
+		height: 60px;
+		left: 164px;
+		top: 0px;
+	}
+	#___b {
+		left: 223px;
+		top: 18px;
+		position: absolute;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		line-height: 41px;
+		margin-top: -9px;
+		text-align: left;
+		font-family: AppleSDGothicNeoUL00;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(170,170,170,1);
+	}
+	#_51 {
+		position: absolute;
+		width: 31.502px;
+		height: 29.251px;
+		left: 642px;
+		top: 14px;
+		overflow: visible;
+	}
+	#_131_b {
+		fill: rgba(95,95,95,1);
+	}
+	._131_b {
+		overflow: visible;
+		position: absolute;
+		width: 24.753px;
+		height: 18.005px;
+		left: 6.749px;
+		top: 2.25px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_132_b {
+		fill: rgba(95,95,95,1);
+	}
+	._132_b {
+		overflow: visible;
+		position: absolute;
+		width: 29.25px;
+		height: 29.251px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+	::-webkit-scrollbar { display: none; }
+</style>
+<script id="applicationScript">
+
+
+</script>
+</head>
+<body>
+<div id="_1920__4" class="shadow">
+	<div id="_62">
+		<div id="_61">
+			<svg class="bg" viewBox="0 0 1920 504">
+				<path id="bg" d="M 0 0 L 1920.000122070313 0 L 1920.000122070313 504 L 0 504 L 0 0 Z">
+				</path>
+			</svg>
+			<div id="Contact">
+				<span>Contact</span>
+			</div>
+			<div id="A1B4s_github">
+				<a href = 'https://github.com/oleeyoung520/a1b4_project' style="text-decoration:none">
+				<span>A1B4's github</span>
+				</a>
+			</div>
+			<svg class="github" viewBox="0 0 36 35.12">
+				<path id="github" d="M 18 0 C 21.26533317565918 0 24.27699851989746 0.8046666383743286 27.03499984741211 2.414000034332275 C 29.79300117492676 4.023333549499512 31.9766674041748 6.206999778747559 33.58599853515625 8.965000152587891 C 35.19533157348633 11.72300052642822 35.99999618530273 14.73466682434082 36 18 C 36 21.92199897766113 34.8553352355957 25.44933319091797 32.56600189208984 28.58200073242188 C 30.27667045593262 31.71466827392578 27.31966972351074 33.88266754150391 23.69499969482422 35.08599853515625 C 23.27300071716309 35.16399765014648 22.9603328704834 35.10933303833008 22.75699996948242 34.9219970703125 C 22.55366706848145 34.73466110229492 22.45199966430664 34.50032806396484 22.45199966430664 34.21899795532227 C 22.45199966430664 34.17233276367188 22.45599937438965 33.57466506958008 22.46399879455566 32.42599868774414 C 22.47199821472168 31.2773323059082 22.47599792480469 30.22666549682617 22.47599792480469 29.27399826049805 C 22.47599792480469 27.75866508483887 22.06966400146484 26.64933204650879 21.25699806213379 25.94599914550781 C 22.14766502380371 25.85199928283691 22.94833183288574 25.71133232116699 23.65899848937988 25.52399826049805 C 24.36966514587402 25.3366641998291 25.1039981842041 25.03199768066406 25.86199951171875 24.60999870300293 C 26.6200008392334 24.1879997253418 27.25266647338867 23.66833305358887 27.76000022888184 23.05099868774414 C 28.267333984375 22.43366432189941 28.68133354187012 21.61333084106445 29.00200080871582 20.58999824523926 C 29.32266807556152 19.56666564941406 29.48333358764648 18.39099884033203 29.48399925231934 17.0629997253418 C 29.48399925231934 15.20366668701172 28.86666679382324 13.59433364868164 27.63199996948242 12.23499965667725 C 28.21000099182129 10.8129997253418 28.1473331451416 9.219332695007324 27.44400024414063 7.453999519348145 C 27.00666618347168 7.313333034515381 26.37400054931641 7.399333000183105 25.54599952697754 7.711999416351318 C 24.71799850463867 8.024665832519531 23.99933242797852 8.368332862854004 23.38999938964844 8.742999076843262 L 22.49899864196777 9.305998802185059 C 21.0456657409668 8.899998664855957 19.5456657409668 8.696998596191406 17.99899864196777 8.696998596191406 C 16.45233154296875 8.696998596191406 14.95233249664307 8.899998664855957 13.49899864196777 9.305998802185059 C 13.24899864196777 9.133998870849609 12.91699886322021 8.922998428344727 12.50299835205078 8.672998428344727 C 12.08899784088135 8.422998428344727 11.43699836730957 8.12199878692627 10.54699993133545 7.769999980926514 C 9.657001495361328 7.418001174926758 8.993000984191895 7.312334537506104 8.555000305175781 7.453000068664551 C 7.851666927337646 9.21833324432373 7.789000511169434 10.8120002746582 8.367000579833984 12.23400020599365 C 7.132333755493164 13.59333419799805 6.515000343322754 15.20266723632813 6.515000343322754 17.0620002746582 C 6.515000343322754 18.39000129699707 6.675000190734863 19.5620002746582 6.99500036239624 20.57800102233887 C 7.315000534057617 21.59400177001953 7.725666999816895 22.41433334350586 8.22700023651123 23.03899955749512 C 8.728333473205566 23.66366577148438 9.357333183288574 24.18699836730957 10.11400032043457 24.60899925231934 C 10.87066745758057 25.0310001373291 11.60500049591064 25.33566665649414 12.31700038909912 25.52299880981445 C 13.0290002822876 25.71033096313477 13.82966709136963 25.85099792480469 14.7189998626709 25.94499969482422 C 14.10966682434082 26.50766563415527 13.72700023651123 27.31233215332031 13.57100009918213 28.35899925231934 C 13.24300003051758 28.51499938964844 12.89133358001709 28.63233184814453 12.51599979400635 28.71099853515625 C 12.14066600799561 28.78966522216797 11.69533252716064 28.82866477966309 11.18000030517578 28.82799911499023 C 10.66466808319092 28.82733345031738 10.153000831604 28.65933227539063 9.645000457763672 28.32399940490723 C 9.13700008392334 27.98866653442383 8.703332901000977 27.50033187866211 8.343999862670898 26.85899925231934 C 8.047332763671875 26.35899925231934 7.668333053588867 25.95266532897949 7.206999778747559 25.63999938964844 C 6.74566650390625 25.32733345031738 6.358999729156494 25.1396656036377 6.046999931335449 25.07699966430664 L 5.578000068664551 25.00699996948242 C 5.25 25.00699996948242 5.023333549499512 25.04199981689453 4.898000240325928 25.11199951171875 C 4.772666931152344 25.18199920654297 4.733666896820068 25.27199935913086 4.781000137329102 25.38199996948242 C 4.828333377838135 25.49200057983398 4.898666381835938 25.60133361816406 4.992000102996826 25.70999908447266 C 5.085333824157715 25.81866455078125 5.187000274658203 25.91233062744141 5.296999931335449 25.99099922180176 L 5.460999965667725 26.10799980163574 C 5.804999828338623 26.26399993896484 6.144999980926514 26.56099891662598 6.480999946594238 26.99900054931641 C 6.816999912261963 27.43700218200684 7.063000202178955 27.83533477783203 7.218999862670898 28.19400024414063 L 7.453000068664551 28.73299980163574 C 7.656333446502686 29.32699966430664 8 29.80733299255371 8.484000205993652 30.17399978637695 C 8.968000411987305 30.5406665802002 9.491333961486816 30.77499961853027 10.05399990081787 30.87699890136719 C 10.61666584014893 30.9789981842041 11.15966606140137 31.03366470336914 11.68299961090088 31.0409984588623 C 12.20633316040039 31.04833221435547 12.64000034332275 31.02099800109863 12.98399925231934 30.95899772644043 L 13.52299880981445 30.86499786376953 C 13.52299880981445 31.45899772644043 13.52699851989746 32.15033340454102 13.53499889373779 32.93899917602539 C 13.54299926757813 33.72766876220703 13.54699897766113 34.15333557128906 13.54699897766113 34.21599960327148 C 13.54699897766113 34.49733352661133 13.44533252716064 34.73166656494141 13.24199867248535 34.91899871826172 C 13.03866481781006 35.10633087158203 12.725998878479 35.1609992980957 12.30399894714355 35.08300018310547 C 8.678665161132813 33.87966537475586 5.721665382385254 31.71166610717773 3.432998657226563 28.57900047302246 C 1.144331932067871 25.44633483886719 -9.5367431640625e-07 21.92000007629395 0 18 C 0 14.73466682434082 0.8046666383743286 11.72300052642822 2.414000034332275 8.965000152587891 C 4.023333549499512 6.206999778747559 6.206999778747559 4.023333549499512 8.965000152587891 2.414000034332275 C 11.72300052642822 0.8046666383743286 14.73466682434082 0 18 0 Z M 6.820000171661377 25.85199928283691 C 6.866666793823242 25.74266624450684 6.812000274658203 25.64900016784668 6.656000137329102 25.57099914550781 C 6.5 25.52433204650879 6.398333549499512 25.53999900817871 6.351000308990479 25.61800003051758 C 6.304333686828613 25.72733306884766 6.359000205993652 25.82099914550781 6.515000343322754 25.89900016784668 C 6.655666828155518 25.99300003051758 6.757333755493164 25.97733306884766 6.820000171661377 25.85199928283691 Z M 7.546999931335449 26.64900016784668 C 7.656333446502686 26.57099914550781 7.640666484832764 26.44599914550781 7.5 26.27400016784668 C 7.343999862670898 26.13333320617676 7.218999862670898 26.11000061035156 7.125 26.20400047302246 C 7.015666484832764 26.28200149536133 7.031333446502686 26.40700149536133 7.171999931335449 26.57900047302246 C 7.328000068664551 26.73500061035156 7.453000068664551 26.75833320617676 7.546999931335449 26.64900016784668 Z M 8.25 27.70400047302246 C 8.390666961669922 27.59466743469238 8.390666961669922 27.44633483886719 8.25 27.25900077819824 C 8.124667167663574 27.05566787719727 7.992000102996826 27.0086669921875 7.85200023651123 27.11800003051758 C 7.711333751678467 27.19600105285645 7.711333751678467 27.33666801452637 7.85200023651123 27.54000091552734 C 7.992666721343994 27.74333381652832 8.125332832336426 27.79800033569336 8.25 27.70400047302246 Z M 9.234000205993652 28.6879997253418 C 9.359333038330078 28.56266593933105 9.328000068664551 28.41433334350586 9.140000343322754 28.24300003051758 C 8.952667236328125 28.05566596984863 8.796333312988281 28.03233337402344 8.671000480651855 28.17300033569336 C 8.530333518981934 28.2983341217041 8.561666488647461 28.4466667175293 8.765000343322754 28.61800003051758 C 8.952333450317383 28.80533409118652 9.108667373657227 28.82866668701172 9.234000205993652 28.6879997253418 Z M 10.56999969482422 29.27400016784668 C 10.61666584014893 29.10200119018555 10.51499938964844 28.97700119018555 10.26499938964844 28.89900016784668 C 10.03033256530762 28.83633422851563 9.881999015808105 28.89100074768066 9.819999694824219 29.0629997253418 C 9.758000373840332 29.23499870300293 9.85966682434082 29.35233306884766 10.125 29.41499900817871 C 10.35966682434082 29.50899887084961 10.50800037384033 29.46199989318848 10.56999969482422 29.27399826049805 Z M 12.04699993133545 29.39100074768066 C 12.04699993133545 29.18766784667969 11.91433334350586 29.1016674041748 11.64900016784668 29.13300132751465 C 11.39900016784668 29.13300132751465 11.27400016784668 29.21900177001953 11.27400016784668 29.39100074768066 C 11.27400016784668 29.59433364868164 11.40666675567627 29.68033409118652 11.67199993133545 29.64900016784668 C 11.92199993133545 29.64900016784668 12.04699993133545 29.5629997253418 12.04699993133545 29.39100074768066 Z M 13.4060001373291 29.15700149536133 C 13.37466716766357 28.9850025177002 13.23400020599365 28.91466903686523 12.98400020599365 28.94600105285645 C 12.73400020599365 28.99266815185547 12.62466716766357 29.11000061035156 12.6560001373291 29.29800033569336 C 12.68733310699463 29.48600006103516 12.82800006866455 29.54866600036621 13.07800006866455 29.48600006103516 C 13.32800006866455 29.4233341217041 13.43733310699463 29.31400108337402 13.4060001373291 29.15800094604492 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="_60">
+			<div id="WoW">
+				<span>WoW</span>
+			</div>
+			<svg class="_263">
+				<rect id="_263" rx="60" ry="60" x="0" y="0" width="1046" height="1918">
+				</rect>
+			</svg>
+
+
+			<form action="" target="_blank" method="post">
+				{% csrf_token %}
+				<div id="_59">
+					<div id="_57">
+						<div id="__">
+							<span>회의 안건 |</span>
+						</div>
+						<svg class="_113" viewBox="0 0 320.174 1">
+							<path id="_113" d="M 0 0 L 320.1741638183594 0">
+							</path>
+						</svg>
+						<div id="____">
+							<!-- <span>더 좋은 팀명에 관하여 회의함</span> -->
+							<!-- <span name="title">{{ title }}</span> -->
+							<input type="text" readonly name="title" value="{{ title }}"/>
+						</div>
+						<div id="___z">
+							<span>회의 날짜 |</span>
+						</div>
+						<svg class="_133" viewBox="0 0 135.565 1">
+							<path id="_133" d="M 0 0 L 135.5649871826172 0">
+							</path>
+						</svg>
+						<div id="ID20201111">
+							<!-- <span>2020.11.11</span> -->
+							<!-- <span name="date">{{ date }}</span> -->
+							<input type="text" readonly name="date" value="{{ date }}"/>
+						</div>
+						<div id="___">
+							<span>회의 태그 |</span>
+						</div>
+						<svg class="_135" viewBox="0 0 135.565 1">
+							<path id="_135" d="M 0 0 L 135.5649871826172 0">
+							</path>
+						</svg>
+						<div id="___ba">
+							<span>회의 참석 |</span>
+						</div>
+						<svg class="_114" viewBox="0 -0.118 319.312 0.155">
+							<path id="_114" d="M 0 0.03720495477318764 L 319.3120422363281 -0.1176757961511612">
+							</path>
+						</svg>
+						<div id="_____">
+							<!-- <span>지니, 혜니, 재니, 광니, 태니</span> -->
+							<span>{{ members }}</span>
+						</div>
+						<div id="ID주간회의">
+							<!-- <span>주간회의</span> -->
+							<span>{{ tag }}</span>
+						</div>
+					</div>
+					<div id="_55">
+						<div id="___bb">
+							<span>요약된 회의 내용</span>
+						</div>
+						<svg class="_264">
+							<rect id="_264" rx="23" ry="23" x="0" y="0" width="796" height="202.861">
+							</rect>
+						</svg>
+						<div id="_lexrank__Bert_">
+							<!-- <span>선택한 lexrank / Bert 결과</span> -->
+							<textarea readonly class='summary_data' name="summary_res" placeholder="실제 문장을 살려 요약해요." style="border: none; ;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent">{{ res }}</textarea>
+						</div>
+					</div>
+					<div id="_58">
+						<div id="_">
+							<span>회의 내용</span>
+						</div>
+						<svg class="_265">
+							<rect id="_265" rx="23" ry="23" x="0" y="0" width="796" height="799">
+							</rect>
+						</svg>
+						<svg class="_117" viewBox="0 0 29 25">
+							<path id="_117" d="M 12.72554492950439 1.013508558273315 C 13.09047889709473 0.3866203427314758 13.7678804397583 0 14.50131988525391 0 C 15.23476028442383 0 15.91216087341309 0.3866203427314758 16.27709579467773 1.013508558273315 L 28.7018928527832 21.84486389160156 C 29.52978324890137 23.23436164855957 28.53518676757813 25 26.92611503601074 25 L 2.074106931686401 25 C 0.4634250402450562 25 -0.5295601487159729 23.23197937011719 0.2983302175998688 21.84486389160156 L 12.72554492950439 1.013508558273315 Z">
+							</path>
+						</svg>
+						<div id="Raw_Data">
+							<!-- <span>Raw Data</span> -->
+							<span><textarea readonly class='raw_data' name="res" placeholder="실제 문장을 살려 요약해요." style="border: none; ;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px; background-color:transparent">{{ stt_result }}</textarea></span>
+						</div>
+					</div>
+
+				
+					<button formaction="{% url 'wow:notion_share' %}">
+						<svg class="_121" viewBox="5.625 11.25 24.751 22.501">
+							<path id="_121" d="M 26.4379997253418 11.25 L 19.125 11.25 L 19.125 22.03400039672852 L 22.82999992370605 18.32999992370605 C 23.27326393127441 17.91695213317871 23.96401977539063 17.92913627624512 24.39244270324707 18.35755920410156 C 24.82086372375488 18.78598022460938 24.83304786682129 19.47673606872559 24.42000007629395 19.92000007629395 L 18.79500007629395 25.54500007629395 C 18.35577392578125 25.98368072509766 17.64422607421875 25.98368072509766 17.20499992370605 25.54500007629395 L 11.57999992370605 19.92000007629395 C 11.16695308685303 19.47673606872559 11.17913627624512 18.78598022460938 11.60755825042725 18.35755729675293 C 12.03597927093506 17.92913627624512 12.72673606872559 17.91695213317871 13.17000007629395 18.32999992370605 L 16.875 22.03400039672852 L 16.875 11.25 L 9.562999725341797 11.25 C 7.389017105102539 11.25220584869385 5.627205848693848 13.01401710510254 5.625000953674316 15.18800067901611 L 5.625 29.8129997253418 C 5.627203941345215 31.98698616027832 7.389016151428223 33.74879837036133 9.563000679016113 33.75100326538086 L 26.4379997253418 33.75099945068359 C 28.61198425292969 33.74879837036133 30.3737964630127 31.98698425292969 30.37599945068359 29.8129997253418 L 30.37599945068359 15.1879997253418 C 30.37379455566406 13.01401710510254 28.61198234558105 11.25220584869385 26.4379997253418 11.25000095367432 Z">
+							</path>
+						</svg>
+					</button>
+				 </form>
+
+				<div id="_56">
+					<div id="__bj">
+						<span>스케줄 저장하기</span>
+					</div>
+					<div id="_54">
+						<div id="ID20201225">
+							<!-- <span>2020.12.25</span> -->
+							<span>{{ event_list.0.0 }}</span>
+						</div>
+						<svg class="_266">
+							<rect id="_266" rx="23" ry="23" x="0" y="0" width="406" height="59">
+							</rect>
+						</svg>
+						<div id="____bn">
+							<!-- <span>크리스마스, 지니님, 생일, 선물</span> -->
+							<textarea wrap="off" readonly placeholder="{{ event_list.0.1 }}" style="border-bottom: none; border-left: none; border-image: initial; border-right: 0px; border-top: 0px; background-color: transparent; overflow-y:hidden; margin: 0px; width: 281px; height: 40px; ms-overflow-style: none; resize:none;">{{ event_list.0.1 }}</textarea>
+						</div>
+						<form action="" target="_blank" method="post">
+							{% csrf_token %}
+							<input type="hidden" name="d" value="{{ event_list.0.0 }}">
+							<input type="hidden" name="e" value="{{ event_list.0.1 }}">
+							<div id="_49" style="cursor:pointer;" > <!-- OnClick="location.href ='calendar_goo'" -->
+								<svg class="_131" viewBox="10.123 5.622 24.753 18.005">
+									<path id="_131" d="M 34.54600143432617 5.953999996185303 C 34.75759887695313 6.165060043334961 34.87651443481445 6.451638698577881 34.87651443481445 6.750499725341797 C 34.87651443481445 7.049360752105713 34.75759887695313 7.335939884185791 34.54600524902344 7.546999454498291 L 18.79600143432617 23.29700088500977 C 18.5849437713623 23.50859451293945 18.29836463928223 23.62751197814941 17.99950218200684 23.62751197814941 C 17.70063972473145 23.62751197814941 17.41406059265137 23.50859451293945 17.20300102233887 23.29699897766113 L 10.45300102233887 16.54700088500977 C 10.01310729980469 16.10710525512695 10.01310729980469 15.39389514923096 10.45300197601318 14.95400047302246 C 10.89289665222168 14.51410579681396 11.60610675811768 14.51410579681396 12.04600238800049 14.95400047302246 L 18 20.90900039672852 L 32.95400238037109 5.953000068664551 C 33.16506195068359 5.74140739440918 33.45164108276367 5.622490406036377 33.75050354003906 5.622490406036377 C 34.04936599731445 5.622490406036377 34.33594131469727 5.74140739440918 34.54700088500977 5.953000545501709 Z">
+									</path>
+								</svg>
+								<button formaction="{% url 'wow:calendar_share' %}">
+								<svg class="_132" viewBox="3.375 3.373 29.25 29.251">
+									<path id="_132" d="M 18 5.625 C 11.16547584533691 5.625 5.625 11.16547679901123 5.625 18 C 5.625 24.83452415466309 11.16547679901123 30.375 18 30.375 C 24.83452415466309 30.375 30.375 24.83452224731445 30.375 18 C 30.375 17.3786792755127 30.8786792755127 16.875 31.5 16.875 C 32.12131881713867 16.875 32.625 17.3786792755127 32.625 18 C 32.625 24.61701965332031 28.17936706542969 30.41095733642578 21.78587341308594 32.1244010925293 C 15.39012050628662 33.83747100830078 8.643261909484863 31.04224395751953 5.334003448486328 25.30975532531738 C 2.024744033813477 19.57726669311523 2.978181838989258 12.33679962158203 7.658629417419434 7.65640926361084 C 12.33907222747803 2.976021766662598 19.57954978942871 2.022670745849609 25.31199836730957 5.331997871398926 C 25.67910385131836 5.523026943206787 25.91169357299805 5.900180816650391 25.91757774353027 6.313973426818848 C 25.92346382141113 6.727766513824463 25.70169258117676 7.111381530761719 25.34016609191895 7.312771320343018 C 24.97863960266113 7.514161109924316 24.53573417663574 7.500806331634521 24.18699836730957 7.278000354766846 C 22.30657958984375 6.190901756286621 20.17203712463379 5.620610237121582 18 5.625 Z">
+									</path>
+								</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+					<div id="_53">
+						<div id="ID20201224">
+							<!-- <span>2020.12.24</span> -->
+							<span>{{ event_list.1.0 }}</span>
+						</div>
+						<svg class="_266_bt">
+							<rect id="_266_bt" rx="23" ry="23" x="0" y="0" width="406" height="59">
+							</rect>
+						</svg>
+						<div id="___bu">
+							<!-- <span>회의, 놀기, 생일</span> -->
+							<textarea wrap="off" readonly placeholder="{{ event_list.1.1 }}" style="border-bottom: none; border-left: none; border-image: initial; border-right: 0px; border-top: 0px; background-color: transparent; overflow-y:hidden; margin: 0px; width: 281px; height: 40px; ms-overflow-style: none; resize:none; resize:none;">{{ event_list.1.1 }}</textarea>
+						</div>
+						<form action="" target="_blank" method="post">
+							{% csrf_token %}
+							<input type="hidden" name="d" value="{{ event_list.1.0 }}">
+							<input type="hidden" name="e" value="{{ event_list.1.1 }}">
+							<div id="_50">
+								<svg class="_131_bw" viewBox="10.123 5.622 24.753 18.005">
+									<path id="_131_bw" d="M 34.54600143432617 5.953999996185303 C 34.75759887695313 6.165060043334961 34.87651443481445 6.451638698577881 34.87651443481445 6.750499725341797 C 34.87651443481445 7.049360752105713 34.75759887695313 7.335939884185791 34.54600524902344 7.546999454498291 L 18.79600143432617 23.29700088500977 C 18.5849437713623 23.50859451293945 18.29836463928223 23.62751197814941 17.99950218200684 23.62751197814941 C 17.70063972473145 23.62751197814941 17.41406059265137 23.50859451293945 17.20300102233887 23.29699897766113 L 10.45300102233887 16.54700088500977 C 10.01310729980469 16.10710525512695 10.01310729980469 15.39389514923096 10.45300197601318 14.95400047302246 C 10.89289665222168 14.51410579681396 11.60610675811768 14.51410579681396 12.04600238800049 14.95400047302246 L 18 20.90900039672852 L 32.95400238037109 5.953000068664551 C 33.16506195068359 5.74140739440918 33.45164108276367 5.622490406036377 33.75050354003906 5.622490406036377 C 34.04936599731445 5.622490406036377 34.33594131469727 5.74140739440918 34.54700088500977 5.953000545501709 Z">
+									</path>
+								</svg>
+								<button formaction="{% url 'wow:calendar_share' %}">
+									<svg class="_132_bx" viewBox="3.375 3.373 29.25 29.251">
+										<path id="_132_bx" d="M 18 5.625 C 11.16547584533691 5.625 5.625 11.16547679901123 5.625 18 C 5.625 24.83452415466309 11.16547679901123 30.375 18 30.375 C 24.83452415466309 30.375 30.375 24.83452224731445 30.375 18 C 30.375 17.3786792755127 30.8786792755127 16.875 31.5 16.875 C 32.12131881713867 16.875 32.625 17.3786792755127 32.625 18 C 32.625 24.61701965332031 28.17936706542969 30.41095733642578 21.78587341308594 32.1244010925293 C 15.39012050628662 33.83747100830078 8.643261909484863 31.04224395751953 5.334003448486328 25.30975532531738 C 2.024744033813477 19.57726669311523 2.978181838989258 12.33679962158203 7.658629417419434 7.65640926361084 C 12.33907222747803 2.976021766662598 19.57954978942871 2.022670745849609 25.31199836730957 5.331997871398926 C 25.67910385131836 5.523026943206787 25.91169357299805 5.900180816650391 25.91757774353027 6.313973426818848 C 25.92346382141113 6.727766513824463 25.70169258117676 7.111381530761719 25.34016609191895 7.312771320343018 C 24.97863960266113 7.514161109924316 24.53573417663574 7.500806331634521 24.18699836730957 7.278000354766846 C 22.30657958984375 6.190901756286621 20.17203712463379 5.620610237121582 18 5.625 Z">
+										</path>
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+					<div id="_52">
+						<div id="ID20201111_bz">
+							<!-- <span>2020.11.11</span> -->
+							<span>{{ event_list.2.0 }}</span>
+						</div>
+						<svg class="_266_b">
+							<rect id="_266_b" rx="23" ry="23" x="0" y="0" width="406" height="60">
+							</rect>
+						</svg>
+						<div id="___b" >
+							<!-- <span>프로젝트, 끝, 과정</span> -->
+							<textarea wrap="off" readonly placeholder="{{ event_list.2.1 }}" style="border-bottom: none; border-left: none; border-image: initial; border-right: 0px; border-top: 0px; background-color: transparent; overflow-y:hidden; margin: 0px; width: 281px; height: 40px; ms-overflow-style: none; resize:none">{{ event_list.2.1 }}</textarea>
+						</div>
+						<form action="" target="_blank" method="post">
+							{% csrf_token %}
+							<input type="hidden" name="d" value="{{ event_list.2.0 }}">
+							<input type="hidden" name="e" value="{{ event_list.2.1 }}">
+							<div id="_51">
+								<svg class="_131_b" viewBox="10.123 5.622 24.753 18.005">
+									<path id="_131_b" d="M 34.54600143432617 5.953999996185303 C 34.75759887695313 6.165060043334961 34.87651443481445 6.451638698577881 34.87651443481445 6.750499725341797 C 34.87651443481445 7.049360752105713 34.75759887695313 7.335939884185791 34.54600524902344 7.546999454498291 L 18.79600143432617 23.29700088500977 C 18.5849437713623 23.50859451293945 18.29836463928223 23.62751197814941 17.99950218200684 23.62751197814941 C 17.70063972473145 23.62751197814941 17.41406059265137 23.50859451293945 17.20300102233887 23.29699897766113 L 10.45300102233887 16.54700088500977 C 10.01310729980469 16.10710525512695 10.01310729980469 15.39389514923096 10.45300197601318 14.95400047302246 C 10.89289665222168 14.51410579681396 11.60610675811768 14.51410579681396 12.04600238800049 14.95400047302246 L 18 20.90900039672852 L 32.95400238037109 5.953000068664551 C 33.16506195068359 5.74140739440918 33.45164108276367 5.622490406036377 33.75050354003906 5.622490406036377 C 34.04936599731445 5.622490406036377 34.33594131469727 5.74140739440918 34.54700088500977 5.953000545501709 Z">
+									</path>
+								</svg>
+								<button formaction="{% url 'wow:calendar_share' %}">
+									<svg class="_132_b" viewBox="3.375 3.373 29.25 29.251">
+										<path id="_132_b" d="M 18 5.625 C 11.16547584533691 5.625 5.625 11.16547679901123 5.625 18 C 5.625 24.83452415466309 11.16547679901123 30.375 18 30.375 C 24.83452415466309 30.375 30.375 24.83452224731445 30.375 18 C 30.375 17.3786792755127 30.8786792755127 16.875 31.5 16.875 C 32.12131881713867 16.875 32.625 17.3786792755127 32.625 18 C 32.625 24.61701965332031 28.17936706542969 30.41095733642578 21.78587341308594 32.1244010925293 C 15.39012050628662 33.83747100830078 8.643261909484863 31.04224395751953 5.334003448486328 25.30975532531738 C 2.024744033813477 19.57726669311523 2.978181838989258 12.33679962158203 7.658629417419434 7.65640926361084 C 12.33907222747803 2.976021766662598 19.57954978942871 2.022670745849609 25.31199836730957 5.331997871398926 C 25.67910385131836 5.523026943206787 25.91169357299805 5.900180816650391 25.91757774353027 6.313973426818848 C 25.92346382141113 6.727766513824463 25.70169258117676 7.111381530761719 25.34016609191895 7.312771320343018 C 24.97863960266113 7.514161109924316 24.53573417663574 7.500806331634521 24.18699836730957 7.278000354766846 C 22.30657958984375 6.190901756286621 20.17203712463379 5.620610237121582 18 5.625 Z">
+										</path>
+									</svg>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
